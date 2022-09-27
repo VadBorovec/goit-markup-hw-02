@@ -1,0 +1,44 @@
+/* основний колір тексту #757575 */
+/* другорядний колір тексту #212121 */
+/* білий #FFFFFF */
+/* колір акценту #2196F3 */
+/* другорядний фон #F5F4FA */
+
+.page {
+    font-family: "roboto" ;
+    background-color: #FFFFFF ;
+    color: #757575;
+}
+
+.logo {
+    color: #000000;
+}
+
+.logo-acsent {
+    color: #2196F3;
+}
+
+ul {
+    list-style: none ;
+}
+
+.site-nav .link {
+    color: #212121 ;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3 ;
+}
+
+.nav-adress .contacts {
+    color: #757575;
+}
+
+.nav-adress .contacts:hover,
+.nav-adress .contacts:focus {
+    color: #2196F3;
+}
+.nav-adress .map {
+    color: #FFFFFF;
+}
