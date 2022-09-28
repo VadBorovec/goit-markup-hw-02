@@ -4,40 +4,126 @@
 /* колір акценту #2196F3 */
 /* другорядний фон #F5F4FA */
 
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --black-text-color: #000000;
+    --primary-bcg-color: #FFFFFF;
+    --secondary-bcg-color: #F5F4FA;
+    --dark-bcg-color: #2F303A;
+
+}
+
+/* Тіло */
+
 .page {
-    font-family: "roboto" ;
-    background-color: #FFFFFF ;
-    color: #757575;
-}
-
-.logo {
-    color: #000000;
-}
-
-.logo-acsent {
-    color: #2196F3;
+    font-family: "roboto";
+    background-color: var(--primary-bcg-color);
+    color: var(--primary-text-color);
 }
 
 ul {
-    list-style: none ;
+    list-style: none;
 }
 
+/* Лого */
+
+.logo {
+    font-family: "raleway";
+    color: var(--black-text-color);
+
+}
+
+.logo.accent {
+    color: var(--accent-color);
+}
+
+.logo.primary {
+    color: var(--black-text-color);
+}
+
+.logo.secondary {
+    color: var(--white-text-color);
+}
+
+/* Навігація */
+
 .site-nav .link {
-    color: #212121 ;
+    color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-    color: #2196F3 ;
+.site-nav .link:focus,
+.site-nav .link.current {
+    color: var(--accent-color) ;
 }
 
+/* Герой */
+
+.hero {
+    color: var(--white-text-color);
+    background-color: var(--dark-bcg-color);
+}
+
+/* Кнопки */
+
+.button {
+    font-family: "roboto";
+}
+
+.button.primary {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #188CE8;
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bcg-color);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+/* Секція */
+.section-title,
+.title {
+    color: var(--title-text-color);
+}
+
+.team {
+    background-color: var(--secondary-bcg-color);
+}
+
+
+/* Підвал */
+
+.page-footer {
+    background-color:  var(--dark-bcg-color);
+}
+/* Адреса та контакти */
+
 .nav-adress .contacts {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .nav-adress .contacts:hover,
 .nav-adress .contacts:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .nav-adress .map {
     color: #FFFFFF;
